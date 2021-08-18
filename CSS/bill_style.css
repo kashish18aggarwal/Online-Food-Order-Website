@@ -1,0 +1,183 @@
+body {
+    text-align: center;
+}
+
+.billing {
+    /* height: 500px; */
+    width: 100%;
+    background-color: #E0C097;
+    padding: 10px;
+    /* border: 2px solid green; */
+    margin: auto;
+    text-align: center;
+    /* margin: 20px 20px 20px 20px; */
+    /* right: 20px; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.selectItems {
+    background-image: url("../Images/bill-list-background.jpg");
+    /* text-align: left; */
+    margin: 30px;
+    background-size: contain;
+    background-repeat: repeat;
+    height: 343px;
+    width: 200px;
+    padding: 10px;
+    padding-top: 50px;
+    border: 2px solid black;
+    background-color: #B85C38;
+}
+
+.inside {
+    /* margin-top: 55px; */
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    font-size: large;
+    /* padding-bottom: 40px; */
+}
+
+.food-input {
+    /* border: 2px solid red; */
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 35px;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    background-color: #E0C097;
+}
+
+.label-text {
+    margin: 7px;
+    padding: 4px;
+    color: #fff;
+    text-align: left;
+}
+
+.cartAdded {
+    margin-left: 50px;
+    background-color: #B85C38 !important;
+    color: #fff !important;
+    border: 1px solid #B85C38 !important;
+    font-family: "Montserrat-Bold" !important;
+    font-weight: bolder !important;
+    /* margin-top: 2px !important; */
+}
+
+.cart {
+    /* border: 2px solid red; */
+    background-image: url("../Images/bill-list-background.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    margin: 30px;
+    height: 340px;
+    width: 250px;
+    background-color: #B85C38;
+    color: #fff;
+    /* padding: 30px; */
+    padding-top: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    display: inline-block;
+    /* line-height: 1.5; */
+}
+
+/* #list {
+    font-size: 20px;
+} */
+
+.list-heading {
+    font-family: "Montserrat";
+    font-weight: bold;
+    list-style: none;
+    font-size: 20px;
+}
+
+.not-style {
+    list-style: none;
+}
+
+.calculate {
+    /* background-color: red; */
+    margin: auto;
+    text-align: center;
+    background-color: #E0C097;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.calc {
+    background-color: #B85C38 !important;
+    color: white !important;
+    border: 1px solid #B85C38 !important;
+    font-family: "Montserrat-Bold" !important;
+    font-weight: bolder !important;
+    margin-bottom: 10px;
+}
+
+#pay {
+    display: none;
+}
+
+.pay-icon {
+    margin: 20px 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#payment {
+    /* background-color: red; */
+    display: none;
+    padding: 3% 10%;
+    text-align: center;
+    /* margin: auto; */
+}
+
+.bill-heading {
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    text-align: center;
+    display: none;
+}
+
+.reservation {
+    display: none;
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#footer {
+    /* background-color: red; */
+    text-align: center;
+}
