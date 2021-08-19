@@ -1,5 +1,6 @@
-var items = ["Pizza", "Sandwich", "Kulcha", "Burger","Dal"]
-var price = [150, 50, 30, 40,20];
+var items = ["Veg Cutlet", "Samosa", "Pav Bhaji", "Dim Sums", "Soup Dumplings", "Kapa Maki", "Margherita Pizza", "Pistachio Panna Cotta", "Tomato Salsa", "Tamales", "Fried Ice Cream"]
+
+var price = [150, 75, 100, 210, 110, 599, 110, 250, 280, 200, 200];
 
 var select = document.getElementById("food-item");
 
@@ -13,11 +14,8 @@ var quantityItem = [];
 for (var j = 0; j < items.length; j++) {
     var item = items[j];
     var ele = document.createElement("option");
-    // console.log(ele);
     ele.textContent = item;
-    // console.log(ele);
     ele.value = item;
-    // console.log(select);
     select.appendChild(ele);
 }
 // })
@@ -26,7 +24,7 @@ for (var j = 0; j < items.length; j++) {
 function addToCart() {
     var food = document.getElementById("food-item").value;
     var quantity = document.getElementById("quant").value;
-    console.log(quantity);
+    //  console.log(quantity);
 
     if (food == "Open this select menu") {
         alert("Choose any item");
@@ -53,8 +51,10 @@ function updateTable() {
 
     var food = document.getElementById("food-item").value;
     cell1.innerHTML = food;
+
     var quant = document.getElementById("quant").value;
     cell2.innerHTML = quant;
+
     var mrp = price[items.indexOf(food)];
     cell3.innerHTML = mrp;
     var cost = mrp * quant;
@@ -64,18 +64,18 @@ function updateTable() {
 
 function resetTable() {
 
-    var len=document.getElementById("data").rows.length;
+    var len = document.getElementById("data").rows.length;
 
-    while(len!=1)
-    {
-        document.getElementById("data").deleteRow(len-1);
+    while (len != 1) {
+        document.getElementById("data").deleteRow(len - 1);
         len = document.getElementById("data").rows.length;
     }
     index = 1;
     selectedItems = [];
     quantityItem = [];
-    totalBill=0;
+    totalBill = 0;
     document.getElementById("payment").style.display = "none";
+    document.getElementById("pay").style.display = "none";
 }
 
 
@@ -85,14 +85,14 @@ function calculateTotalBill() {
     document.getElementById("top-heading").style.display = "block";
 
 
-    document.getElementById("total-bill").innerHTML = "Hey Foodies, Your total Bill is " + totalBill+"<br>Have a nice day";
-    
+    document.getElementById("total-bill").innerHTML = "Hey Foodies, Your total Bill is " + totalBill + "<br>Have a nice day";
+
 }
 
 
 
 function showPayment() {
-    totalBill=0;
+    totalBill = 0;
     document.getElementById("payment").style.display = "block";
 }
 
@@ -102,25 +102,22 @@ function addReservation() {
 
     var name = document.getElementById("exampleName").value;
 
-    var email=document.getElementById("exampleEmail").value;
+    var email = document.getElementById("exampleEmail").value;
 
-    if(name=="")
-    {
+    if (name == "") {
         alert("Please Enter name");
     }
-    else if(email=="")
-    {
+    else if (email == "") {
         alert("Please enter email");
     }
-    else
-    {
+    else {
         document.getElementById("reserve-content").style.display = "block";
 
 
 
         document.getElementById("reserve-msg").innerHTML = "Hey " + name + " , Your table has been booked successfully!<br>Have a nice day.";
     }
-    
 
-    
+
+
 }
