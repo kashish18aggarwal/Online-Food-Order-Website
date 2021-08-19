@@ -36,7 +36,7 @@
 
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="">foodies</a>
+                <a class="navbar-brand title-heading" href="">foodies</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -81,6 +81,9 @@
                             <select class="form-select food-input" aria-label="Default select example" id="food-item">
                                 <option selected>Open this select menu</option>
 
+
+
+
                             </select>
                             <br>
                             <label for="quant" class="label-text">Enter quantity:</label>
@@ -96,15 +99,15 @@
 
                         <table class="table" id="data">
                             <!-- <thead> -->
-                                <tr>
-                                    <th scope="col">Items</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">MRP</th>
-                                    <th scope="col">Total</th>
-                                </tr>
+                            <tr>
+                                <th scope="col">Items</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">MRP</th>
+                                <th scope="col">Total</th>
+                            </tr>
                             <!-- </thead> -->
                             <!-- <tbody> -->
-                                <tr>
+                            <!-- <tr>
 
                                 </tr>
                                 <tr>
@@ -112,7 +115,7 @@
                                 </tr>
                                 <tr>
 
-                                </tr>
+                                </tr> -->
                             <!-- </tbody> -->
                         </table>
 
@@ -133,6 +136,7 @@
         <div class="calculate" id="pay">
             <button class="btn btn-light btn-lg calc" onclick="showPayment()">Pay Bill</button>
         </div>
+
         <div id="payment">
             <i class="pay-icon fab fa-paypal"></i>
             <i class="pay-icon fab fa-cc-amazon-pay"></i>
@@ -164,7 +168,7 @@
                 <div class="form-group">
                     <label for="exampleInputmsg1">Details</label>
                     <textarea name="message" rows="8" class="form-control" id="message"
-                        placeholder="Message"></textarea>
+                        placeholder="Enter timings and required table size and other details"></textarea>
                 </div>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
